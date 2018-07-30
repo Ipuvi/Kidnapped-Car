@@ -213,6 +213,36 @@ void ParticleFilter::resample() {
 	// NOTE: You may find std::discrete_distribution helpful here.
 	//   http://en.cppreference.com/w/cpp/numeric/random/discrete_distribution
 
+	vector<Particle> new_particles;
+
+	//Fetching Current Weights...
+	vector<double> weights;
+	for (int i = 0; i < no_of_particles; i++){
+		weights.push_back(particles[i].weight);
+	}
+
+	//Generating random starting index for resampling wheel...
+	uniform_int_distribution<int> uniintdist(0, no_of_particles - 1);
+	auto index = uniintdist(gen);
+
+	//To Fetch Maximum Weight...
+	double max_weight =  *max_element(weights.begin(), weights.end());
+
+	//Uniform random distribution...
+	uniform_int_distribution<double> unirealdist(0.0, max_weight);
+
+	double beta = 0.0;
+
+	//In order to spin resampled wheel...
+	for (int i = 0; i<no_of_particles; i++){
+		beta += unirealdist(gen) * 2.0;
+		while (beta > weights[index]){
+			beta -= weights[index];
+			index = (index + 1) % no_of_particles;
+		}
+		new_particles.push_back(particles[index]);
+	}
+	particles = new_particles;
 }
 
 Particle ParticleFilter::SetAssociations(Particle& particle, const std::vector<int>& associations, 
