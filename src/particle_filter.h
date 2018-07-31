@@ -28,7 +28,7 @@ struct Particle {
 class ParticleFilter {
 	
 	// Number of particles to draw
-	int num_particles; 
+	int no_of_particles; 
 	
 	
 	
@@ -45,7 +45,7 @@ public:
 
 	// Constructor
 	// @param num_particles Number of particles
-	ParticleFilter() : num_particles(0), is_initialized(false) {}
+	ParticleFilter() : no_of_particles(0), is_initialized(false) {}
 
 	// Destructor
 	~ParticleFilter() {}

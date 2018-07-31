@@ -5,5 +5,5 @@
 #
 
 # Run particle filter
-cd ./build
-./particle_filter
+cd ./src
+./particle_filter.cpp
