@@ -1,11 +1,3 @@
-
-/*
-*
-*	Author : Tiffany Huang nad Jeremy Shanon
-*   particle_filter.cpp
-*   Created on : Dec 12, 2016 and May 17, 2017 respectively...
-*   
-*/
 #include "particle_filter.h"
 
 #include <iostream>
