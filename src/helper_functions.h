@@ -1,8 +1,6 @@
 /*
  * helper_functions.h
  * Some helper functions for the 2D particle filter.
- *  Created on: Dec 13, 2016
- *      Author: Tiffany Huang
  */
 
 #ifndef HELPER_FUNCTIONS_H_
@@ -13,11 +11,6 @@
 #include <math.h>
 #include <vector>
 #include "map.h"
-
-// for portability of M_PI (Vis Studio, MinGW, etc.)
-#ifndef M_PI
-const double M_PI = 3.14159265358979323846;
-#endif
 
 /*
  * Struct representing one position/control measurement.
