@@ -16,6 +16,10 @@ In this project I was supposed to implement a 2 dimensional particle filter in C
 ## Installations
 This project involves the Term 2 Simulator which can be downloaded [here](https://github.com/udacity/self-driving-car-sim/releases)
 
+
+![alt text](https://raw.githubusercontent.com/Ipuvi/Kidnapped-Car/master/img/Simulator.png)
+
+
 This repository includes two files that can be used to set up and install uWebSocketIO for either Linux or Mac systems. For windows you can use either Docker, VMware, or even Windows 10 Bash on Ubuntu to install uWebSocketIO.
 
 Once the install for uWebSocketIO is complete, the main program can be built and ran by doing the following from the project top directory.
