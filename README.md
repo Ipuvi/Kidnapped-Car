@@ -93,7 +93,7 @@ Success! Your particle filter passed!
 
 ```
 
-![alt text](https://raw.github.com/Ipuvi/projectname/Kidnapped-Car/img/Success.png)
+![alt text](https://raw.githubusercontent.com/Ipuvi/Kidnapped-Car/master/img/Success.png)
 
 # Implementing the Particle Filter
 The directory structure of this repository is as follows:
